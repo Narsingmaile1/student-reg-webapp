@@ -20,8 +20,8 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Upload JAR artifact
+    - name: Upload WAR artifact
       uses: actions/upload-artifact@v4
       with:
-        name: built-jar
-        path: target/*.jar
+        name: built-war
+        path: target/*.war
